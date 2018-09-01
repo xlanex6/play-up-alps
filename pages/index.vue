@@ -1,6 +1,6 @@
 <template lang="pug">
-section.container
-  app-logo
+  container.container
+    app-logo
     h1.title
       | play-up-alps
     h2.subtitle
@@ -25,13 +25,13 @@ export default {
 .container {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 100px;

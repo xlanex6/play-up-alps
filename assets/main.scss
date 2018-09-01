@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/_all.sass";
+
 // Bulma varialbe MUST stay between botth import
 $primary: red;
 $info: orange;
@@ -7,5 +8,7 @@ $warning: blue;
 $danger: indigo;
 $light: lightgrey;
 $dark: darkgrey;
+
+$body-family: "Montserrat";
 
 @import "~bulma/bulma";
