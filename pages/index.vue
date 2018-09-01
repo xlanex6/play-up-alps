@@ -1,25 +1,14 @@
-<template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        play-up-alps
-      </h1>
-      <h2 class="subtitle">
-        Play Up Alps website
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+section.container
+  app-logo
+    h1.title
+      | play-up-alps
+    h2.subtitle
+      | Play Up Alps website
+    .links
+      a.button--green(href='https://nuxtjs.org/', target='_blank') Documentation
+      a.button--grey(href='https://github.com/nuxt/nuxt.js', target='_blank') GitHub
+
 </template>
 
 <script>
@@ -32,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
   min-height: 100vh;
   display: flex;
@@ -46,7 +35,7 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: $primary;
   letter-spacing: 1px;
 }
 

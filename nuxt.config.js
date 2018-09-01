@@ -13,6 +13,11 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+  modules: [
+    // provide path to the file with resources
+    ['nuxt-sass-resources-loader', './assets/main.scss']
+  ],
   /*
   ** Customize the progress bar color
   */

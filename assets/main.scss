@@ -1,0 +1,11 @@
+@import "~bulma/sass/utilities/_all.sass";
+// Bulma varialbe MUST stay between botth import
+$primary: red;
+$info: orange;
+$success: green;
+$warning: blue;
+$danger: indigo;
+$light: lightgrey;
+$dark: darkgrey;
+
+@import "~bulma/bulma";
