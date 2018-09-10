@@ -1,54 +1,58 @@
 <template lang="pug">
-  container.container
-    app-logo
-    h1.title
-      | play-up-alps
-    h2.subtitle
-      | Play Up Alps website
-    .links
-      a.button--green(href='https://nuxtjs.org/', target='_blank') Documentation
-      a.button--grey(href='https://github.com/nuxt/nuxt.js', target='_blank') GitHub
+  section.has-bg-img
+    .container
+      img.bubble(src="~assets/bubble.png")
+      .pua-navbar
+        img.logo(src="~assets/logo.png")
+      .pua-header
+        h1 test
+        img(src="~assets/logo-title.png")
+    
 
+        //- .pua-highlight Activer et rassembler l’arc alpin pour contribuer au développement de réussites
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import AppLogo from "~/components/AppLogo.vue";
 
 export default {
   components: {
     AppLogo
   }
-}
+};
 </script>
 
-<style lang="scss">
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="stylus">
+.pua-highlight
+  background: $primary
+  color: $white
+  letter-spacing: 0.64px
+  line-height: 25px
+.pua-navbar
+  img.logo
+    height 35px
+    width 50px
+    margin-top 30px
+.pua-header
+  position relative
+  display flex
+  align-items center
+  justify-content center
+img.bubble 
+  position absolute
+  width 632px
+  height 507px
+  top 150px
+  right -37px
 
-.title {
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: $primary;
-  letter-spacing: 1px;
-}
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
 
-.links {
-  padding-top: 15px;
-}
+  img 
+    width 100px
+.has-bg-img
+  height 640px
+  background url("/assets/header-bg.jpg") center center
+  background-size cover
+  
 </style>
 
