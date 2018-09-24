@@ -15,6 +15,11 @@ div
             img(src="~assets/logo-title.png")
         img.bubble(src="~assets/bubble.png")
   section
+    .columns
+      .column 
+      .column
+        .full-red-block Play Up Alps fédère et facilite l’organisation d’événements startup dans l’arc Alpin
+  section
     .container
       h3.number-tag #1
       .bloc
@@ -24,7 +29,6 @@ div
             p Nous sommes un collectif bénévole avec un but commun :
             p.quote  «  Faire vivre une expérience différente et grandissante. »
           img(src="~assets/gre-pano.jpg")
-
   section
     .container
       h3.number-tag #2
@@ -108,6 +112,14 @@ h3.number-tag {
   font-size: 45px;
   color: #E4003A;
   letter-spacing: 0.6px;
+}
+
+.full-red-block {
+  background-color: #E4003A;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 28px;
+  padding: 30px 0 30px 30px;
 }
 
 // h3:after {
