@@ -17,17 +17,19 @@ div
   section
     .container
       h3.number-tag #1
-      .bloc.association
-        h4.section-title L'association
-        .white-bloc
-          p Nous sommes un collectif bénévole avec un but commun :
-          p.quote  «  Faire vivre une expérience différente et grandissante. »
-        img(src="~assets/gre-pano.jpg")
+      .bloc
+        .association
+          h4.section-title L'association
+          .white-bloc
+            p Nous sommes un collectif bénévole avec un but commun :
+            p.quote  «  Faire vivre une expérience différente et grandissante. »
+          img(src="~assets/gre-pano.jpg")
 
   section
     .container
       h3.number-tag #2
-      h4.section-title Les Startup Weekend
+      .bloc
+        h4.section-title Les Startup Weekend
 
 
         //- .pua-highlight Activer et rassembler l’arc alpin pour contribuer au développement de réussites
@@ -147,6 +149,8 @@ p.quote {
 .bloc {
   padding-left: 60px;
   position: relative;
+  // display: flex;
+  // justify-content: center;
 }
 
 .association {
