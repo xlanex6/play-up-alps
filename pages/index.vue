@@ -18,7 +18,7 @@ div
     .columns
       .column 
       .column
-        .full-red-block Play Up Alps fédère et facilite l’organisation d’événements startup dans l’arc Alpin
+        .full-block.red Play Up Alps fédère et facilite l’organisation d’événements startup dans l’arc Alpin
   section
     .container
       h3.number-tag #1
@@ -29,27 +29,75 @@ div
             p Nous sommes un collectif bénévole avec un but commun :
             p.quote  «  Faire vivre une expérience différente et grandissante. »
           img(src="~assets/gre-pano.jpg")
+  section 
+    .container
+      .more-info
+        h3 en savoir plus 
   section
     .container
       h3.number-tag #2
-      .bloc
+      .bloc#sw
         h4.section-title Les Startup Weekend
+        .blue-text
+          h4 De l'idée à la startup
+          p  Le Startup Weekend est un événement dont le concept a été initié aux Etats-Unis en 2007 à Boudler, Colorado. Il est porté par Techstars de Google for Entrepreneurs.
+  section
+    .container
+      .blue-section
+        p Ces événements permettent de révéler le dynamisme de l’écosystème entrepreneurial local au travers de 54 heures de travail collaboratif. Chaque année, une startup est distinguée, et de nombreux projets sont mis sur les rails grâce à un accompagnement stratégique sur-mesure.
+        p.light En plus de 10 ans, il s’est exporté partout dans le monde, notamment en France. On compte plus de 4000 éditions dans près de 1200 villes et 140 pays, rassemblant plus de 230 000 participants !
+  section
+    .columns
+      .column 
+      .column
+        .full-block.white Découvrez dès à present nos éditions alpines
+  section
+    .container
+      h3.number-tag #3
+      .bloc
+        .association
+          h4.section-title Prochains rendez-vous
+    .container-fluid
+      .bg-block
+        .bg-blue  
+        .bg-grey
+      .container
+        
 
-
-        //- .pua-highlight Activer et rassembler l’arc alpin pour contribuer au développement de réussites
 </template>
 
 <script>
-import AppLogo from "~/components/AppLogo.vue";
-
 export default {
-  components: {
-    AppLogo
-  }
+  components: {}
 };
 </script>
 
 <style lang="stylus">
+.bg-block {
+  margin-top: 60px;
+  z-index: -1;
+  position: relative;
+
+  .bg-blue {
+    position: absolute;
+    background-color: #1F2951;
+    width: 100%;
+    height: 100px;
+    transform-origin: center;
+    transform: rotate(-8deg) translateX(-100px);
+  }
+
+  .bg-grey {
+    top: 100px;
+    position: absolute;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 800px;
+    transform-origin: center;
+    transform: rotate(-5deg) translateY(-60px);
+  }
+}
+
 .pua-highlight {
   background: $primary;
   color: $white;
@@ -114,12 +162,20 @@ h3.number-tag {
   letter-spacing: 0.6px;
 }
 
-.full-red-block {
-  background-color: #E4003A;
+.full-block {
   font-size: 18px;
-  color: #FFFFFF;
   line-height: 28px;
   padding: 30px 0 30px 30px;
+}
+
+.red {
+  background-color: #E4003A;
+  color: #FFFFFF;
+}
+
+.white {
+  transform: translateY(-50px);
+  background-color: #FFFF;
 }
 
 // h3:after {
@@ -192,6 +248,65 @@ p.quote {
   letter-spacing: 1px;
   line-height: 25px;
   margin-top: 10px;
+}
+
+.blue-section {
+  background-color: #1F2951;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 28px;
+  padding: 46px;
+
+  p.light {
+    /* En plus de 10 ans, i: */
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 23px;
+    margin: 30px 0;
+  }
+}
+
+.more-info {
+  :before {
+    content: url('/assets/micro-logo.svg');
+    margin-right: 10px;
+  }
+
+  margin-top: 20px;
+  padding-right: 20px;
+  background-color: #E4003A;
+  text-align: right;
+  color: #FFFF;
+  text-transform: uppercase;
+}
+
+#sw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blue-text {
+  width: 40%;
+  margin-bottom: 50px;
+
+  h4 {
+    font-family: Montserrat-Regular;
+    font-size: 27px;
+    color: #FFFFFF;
+    letter-spacing: 0.64px;
+    line-height: 25px;
+    background-color: #1F2951;
+    margin-bottom: 15px;
+  }
+
+  p {
+    text-align: justify;
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+  }
 }
 </style>
 
