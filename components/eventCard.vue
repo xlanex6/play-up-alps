@@ -3,8 +3,7 @@
       .event-img
         img(:src="imgUrl")
       .event-content
-        .event-city 
-          h3 {{city}}
+        .event-city {{city}}
         .event-address
             h3 {{place}} 
             | {{address}}
@@ -40,8 +39,15 @@ export default {
 <style lang="stylus" scoped>
 .event-card {
   background-color: white;
-  height: 210px;
+  height: 100%;
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 769px) {
+    height: 210px;
+    flex-direction: row;
+  }
+
   position: relative;
   margin-bottom: 60px;
 
@@ -54,14 +60,15 @@ export default {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    width: 320px;
 
-    .event-city h3 {
+    .event-city {
       background-color: #1F2951;
       line-height: 1.1;
       color: white;
       font-size: 27px;
       margin-bottom: 1em;
-      width: 80%;
+      width: 60%;
       font-weight: bold;
       letter-spacing: 1.4px;
     }

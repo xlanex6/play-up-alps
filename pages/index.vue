@@ -13,7 +13,7 @@ div
           .white-block Organisateur des Startup Weekend
           .logo
             img(src="~assets/logo-title.png")
-        img.bubble(src="~assets/bubble.png")
+        img.bubble(src="~assets/bubble.png").is-hidden-mobile
   section
     .columns
       .column 
@@ -66,7 +66,7 @@ div
           .column.is-8.is-offset-2
             eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-annecy.png'", city="Annecy", place="Les Papeteries", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="12-14", month="octobre", link-url="http://www.startupweekendannecy.com/")
             eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-grenoble.png'", city="Grenoble", place="IAE Grenoble", address="525 Avenue Centrale 38400 Saint-Martin-d'Hères", text="à partir de 18h", date="16-18", month="novembre", link-url="http://www.swgrenoble.org/")
-            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-chambery.png'", city="chambéry", place="Le Manége", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="1-3", month="février", link-url="#")
+            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-chambery.png'", city="Chambéry", place="Le Manége", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="1-3", month="février", link-url="#")
   section
     .container
       h3.number-tag #4
@@ -201,31 +201,6 @@ h3.number-tag {
   background-color: #FFFF;
 }
 
-// h3:after {
-// content: ' ';
-// position: absolute;
-// border-bottom: 2px solid #DAD8D8;
-// }
-
-// h3:before {
-// content: ' ';
-// position: absolute;
-// border-bottom: 2px solid #DAD8D8;
-// }
-
-// h3:nth-of-type(1):before {
-// width: 20%;
-// height: 4px;
-// margin: 7% 0 0 -7%;
-// transform: rotate(-45deg);
-// }
-
-// h3:nth-of-type(1):after {
-// width: 15%;
-// height: 4px;
-// margin: 9% 0 0 -9%;
-// transform: rotate(-45deg);
-// }
 h4.section-title {
   font-size: 35px;
   color: #1F2951;
