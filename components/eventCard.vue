@@ -43,6 +43,7 @@ export default {
   height: 210px;
   display: flex;
   position: relative;
+  margin-bottom: 60px;
 
   .event-img {
     padding: 0 20px;
