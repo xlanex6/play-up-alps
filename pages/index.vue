@@ -7,13 +7,13 @@ div
           img.logo(src="~assets/logo.png")
         .pua-header
           .red-block 
-            | Activer et rassembler l’arc alpin pour 
-            br 
-            |contribuer au développement de réussites
+            h3 Activer et rassembler l’arc alpin pour 
+             br 
+             |contribuer au développement de réussites
           .white-block Organisateur des Startup Weekend
           .logo
             img(src="~assets/logo-title.png")
-        img.bubble(src="~assets/bubble.png").is-hidden-mobile
+        img.bubble(src="~assets/bubble.png").is-hidden-touch
   section
     .columns
       .column 
@@ -25,11 +25,14 @@ div
       .bloc
         .association
           h4.section-title L'association
-          .white-bloc
-            p Nous sommes un collectif bénévole avec un but commun :
-            p.quote  «  Faire vivre une expérience différente et grandissante. »
-          img(src="~assets/gre-pano.jpg")
-  section 
+          .columns
+            .column
+                p Nous sommes un collectif bénévole avec un but commun :
+                p.quote  «  Faire vivre une expérience différente et grandissante. »
+          .columns
+            .column.has-text-centered
+              img(src="~assets/gre-pano.jpg")
+  section.is-hidden-touch
     .container
       .more-info
         h3 en savoir plus 
@@ -58,7 +61,7 @@ div
         .association
           h4.section-title Prochains rendez-vous
     .container-fluid
-      .bg-block
+      .bg-block.is-hidden-touch
         .bg-blue  
         .bg-grey
       .container
@@ -132,6 +135,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 10px;
 }
 
 .pua-navbar {
@@ -144,9 +148,13 @@ export default {
 
 .pua-header {
   margin-top: 100px;
-  width: 60%;
+  width: 80%;
   flex-direction: column;
   z-index: 1;
+
+  @media screen and (min-width: 769px) {
+    width: 50%;
+  }
 
   .logo {
     margin-top: 60px;
@@ -161,12 +169,6 @@ img.bubble {
   top: 30%;
   z-index: 0;
 
-  // right: 0;
-
-  // transform: translateX(36%);
-
-  // top: 150px;
-  // right: -37px;
   img {
     width: 100px;
   }
@@ -236,10 +238,8 @@ p.quote {
 }
 
 .white-block {
-  /* Rectangle 2: */
   background: #FFFFFF;
-  width: 70%;
-  /* Organisateur des Sta: */
+  // width: 70%;
   font-family: Montserrat-Regular;
   font-size: 20px;
   color: #1F2951;
@@ -282,10 +282,16 @@ p.quote {
 #sw {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+  }
 }
 
 .blue-text {
-  width: 40%;
+  width: 50%;
+  // width: 40%;
   margin-bottom: 50px;
 
   h4 {
