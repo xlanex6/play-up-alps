@@ -38,6 +38,7 @@ export default {
 
 <style lang="stylus" scoped>
 .event-card {
+  font-family: 'Rubik', sans-serif;
   background-color: white;
   height: 100%;
   display: flex;
