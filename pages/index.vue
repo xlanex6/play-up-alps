@@ -67,7 +67,7 @@ div
       .container
         .columns
           .column.is-8.is-offset-2
-            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-annecy.png'", city="Annecy", place="Les Papeteries", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="12-14", month="octobre", link-url="http://www.startupweekendannecy.com/")
+            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-annecy.png'", city="Annecy", place="Les Papeteries - Image Factory", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="12-14", month="octobre", link-url="http://www.startupweekendannecy.com/")
             eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-grenoble.png'", city="Grenoble", place="IAE Grenoble", address="525 Avenue Centrale 38400 Saint-Martin-d'Hères", text="à partir de 18h", date="16-18", month="novembre", link-url="http://www.swgrenoble.org/")
             eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-chambery.png'", city="Chambéry", place="Le Manége", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="1-3", month="février", link-url="#")
   section
@@ -80,11 +80,14 @@ div
       .columns.sponsors
         .column
         .column.has-text-centered
-          a(href="https://my-mg.com/")
+          a(href="https://my-mg.com/" target="_blank")
             img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538908951/PlayUpApls/mg.png")
         .column.has-text-centered
-          a(href="http://pandorabox-consulting.com/")
+          a(href="http://pandorabox-consulting.com/" target="_blank")
             img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538909245/PlayUpApls/pandorabox.png")
+        .column.has-text-centered
+          a(href="https://levillagebyca.com/fr" target="_blank")
+            img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538909245/PlayUpApls/ca.png")
         .column
 
         

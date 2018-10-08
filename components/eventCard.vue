@@ -60,7 +60,7 @@ export default {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 350px;
 
     .event-city {
       background-color: #1F2951;
