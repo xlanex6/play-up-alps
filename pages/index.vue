@@ -89,8 +89,24 @@ div
           a(href="https://levillagebyca.com/fr" target="_blank")
             img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538909245/PlayUpApls/village-by-ca.png")
         .column
-
+  section#footer
+    .container-fluid
+      .blue-section
+        .container
+          .columns
+            .column.has-text-left.footer-text
+              | Play Up Alps ® 2018
+            .column
+            .column.has-text-centered
+              img.logo(src="~assets/logo.png")
+              img(src="~assets/logo-title.png")
+            .column
+            .column.footer-text.footer-right
+              a(href="mailto:hello@playupalps.com?subject=Depuis%20le%20site%20internet") 
+                i.far.fa-envelope
         
+
+
 
 </template>
 
@@ -314,6 +330,29 @@ p.quote {
 
 .sponsors {
   margin-top: 50px;
+}
+
+#footer {
+  margin-top: 80px;
+
+  .footer-text {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .footer-right {
+    justify-content: flex-end;
+
+    a {
+      color: white;
+      font-size: 2em;
+      text-decoration: none;
+
+      :hover {
+        opacity: 0.7;
+      }
+    }
+  }
 }
 </style>
 
