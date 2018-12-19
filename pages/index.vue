@@ -69,7 +69,7 @@ div
           .column.is-8.is-offset-2
             eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-annecy.png'", city="Annecy", place="Les Papeteries - Image Factory", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="12-14", month="octobre", link-url="http://www.startupweekendannecy.com/")
             eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-grenoble.png'", city="Grenoble", place="IAE Grenoble", address="525 Avenue Centrale 38400 Saint-Martin-d'Hères", text="à partir de 18h", date="16-18", month="novembre", link-url="http://www.swgrenoble.org/")
-            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-chambery.png'", city="Chambéry", place="Le Manége", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="1-3", month="février", link-url="#")
+            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-chambery.png'", city="Chambéry", place="Le Manége", address="331 Rue de la République", text="à partir de 18h", date="1-3", month="février", link-url="https://www.startupweekendchambery.com/")
   section
     .container
       h3.number-tag #4
