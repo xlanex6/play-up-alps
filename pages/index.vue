@@ -67,9 +67,10 @@ div
       .container
         .columns
           .column.is-8.is-offset-2
-            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-annecy.png'", city="Annecy", place="Les Papeteries - Image Factory", address="1 Esplanade Augustin Aussedat", text="à partir de 18h", date="12-14", month="octobre", link-url="http://www.startupweekendannecy.com/")
-            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-grenoble.png'", city="Grenoble", place="IAE Grenoble", address="525 Avenue Centrale 38400 Saint-Martin-d'Hères", text="à partir de 18h", date="16-18", month="novembre", link-url="http://www.swgrenoble.org/")
-            eventCard(:img-url="'https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-chambery.png'", city="Chambéry", place="Le Manége", address="331 Rue de la République", text="à partir de 18h", date="1-3", month="février", link-url="https://www.startupweekendchambery.com/")
+            eventCard( :data-event="bigevent" )
+            eventCard( :data-event="annecy" )
+            eventCard(:data-event="grenoble")
+            // eventCard( :data-event="chambery")
   section
     .container
       h3.number-tag #4
@@ -113,246 +114,254 @@ div
 <script>
 import eventCard from "../components/eventCard.vue";
 export default {
-  components: { eventCard }
+  components: { eventCard },
+  data() {
+    return {
+      annecy: {
+        imgUrl:
+          "https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-annecy.png",
+        city: "Annecy",
+        place: "Papeterie Image Factory",
+        address: "1,3 Esplanade Augustin Aussedat, 74960",
+        text: "à partir de 18h",
+        date: "11-13",
+        month: "octobre",
+        linkUrl: "http://www.startupweekendannecy.com/"
+      },
+      grenoble: {
+        imgUrl:
+          "https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-grenoble.png",
+        city: "Grenoble",
+        place: null,
+        address: null,
+        text: "à partir de 18h",
+        date: "Mois de",
+        month: "novembre",
+        linkurl: "http://www.swgrenoble.org/"
+      },
+      chambery: {
+        imgUrl:
+          "https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1538901367/PlayUpApls/logo-chambery.png",
+        city: "Chambéry",
+        place: "Le Manége",
+        address: "331 Rue de la République",
+        text: "à partir de 18h",
+        date: "1-3",
+        month: "février 20",
+        linkurl: "https://www.startupweekendchambery.com/"
+      },
+      bigevent: {
+        imgUrl:
+          "https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_150/v1538993455/PlayUpApls/ca.png",
+        city: "Chambéry",
+        place: "Place INEDIT",
+        address: "Secret",
+        text: "à partir de 18h",
+        date: "23",
+        month: "février",
+        linkurl: "https://www.startupweekendchambery.com/"
+      }
+    };
+  }
 };
 </script>
 
 <style lang="stylus">
-body {
-  font-family: 'Montserrat', sans-serif;
-}
+body
+  font-family: 'Montserrat', sans-serif
 
-.bg-block {
-  margin-top: 60px;
-  z-index: -1;
-  position: relative;
+.bg-block
+  margin-top: 60px
+  z-index: -1
+  position: relative
 
-  .bg-blue {
-    position: absolute;
-    background-color: #1F2951;
-    width: 100%;
-    height: 100px;
-    transform-origin: center;
-    transform: rotate(-8deg) translateX(-100px);
-  }
+  .bg-blue
+    position: absolute
+    background-color: #1F2951
+    width: 100%
+    height: 100px
+    transform-origin: center
+    transform: rotate(-8deg) translateX(-100px)
 
-  .bg-grey {
-    top: 100px;
-    position: absolute;
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 780px;
-    transform-origin: center;
-    transform: rotate(-5deg) translateY(-60px);
-  }
-}
+  .bg-grey
+    top: 100px
+    position: absolute
+    background-color: #F2F2F2
+    width: 100%
+    height: 780px
+    transform-origin: center
+    transform: rotate(-5deg) translateY(-60px)
 
-.pua-highlight {
-  background: $primary;
-  color: $white;
-  letter-spacing: 0.64px;
-  line-height: 25px;
-}
+.pua-highlight
+  background: $primary
+  color: $white
+  letter-spacing: 0.64px
+  line-height: 25px
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 10px;
-}
+.header
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-left: 10px
 
-.pua-navbar {
-  img.logo {
-    height: 35px;
-    width: 50px;
-    margin-top: 30px;
-  }
-}
+.pua-navbar
+  img.logo
+    height: 35px
+    width: 50px
+    margin-top: 30px
 
-.pua-header {
-  margin-top: 100px;
-  width: 80%;
-  flex-direction: column;
-  z-index: 1;
+.pua-header
+  margin-top: 100px
+  width: 80%
+  flex-direction: column
+  z-index: 1
 
-  @media screen and (min-width: 769px) {
-    width: 50%;
-  }
+  @media screen and (min-width: 769px)
+    width: 50%
 
-  .logo {
-    margin-top: 60px;
-  }
-}
+  .logo
+    margin-top: 60px
 
-img.bubble {
-  position: absolute;
-  width: 632px;
-  height: 507px;
-  left: 35%; // bottom: 0;
-  top: 30%;
-  z-index: 0;
+img.bubble
+  position: absolute
+  width: 632px
+  height: 507px
+  left: 35% // bottom: 0;
+  top: 30%
+  z-index: 0
 
-  img {
-    width: 100px;
-  }
-}
+  img
+    width: 100px
 
-.has-bg-img {
-  height: 640px;
-  background: url('/assets/header-bg.jpg') center center;
-  background-size: cover;
-  position: relative;
-}
+.has-bg-img
+  height: 640px
+  background: url('/assets/header-bg.jpg') center center
+  background-size: cover
+  position: relative
 
-h3.number-tag {
-  font-size: 45px;
-  color: #E4003A;
-  letter-spacing: 0.6px;
-}
+h3.number-tag
+  font-size: 45px
+  color: #E4003A
+  letter-spacing: 0.6px
 
-.full-block {
-  font-size: 18px;
-  line-height: 28px;
-  padding: 30px 0 30px 30px;
-}
+.full-block
+  font-size: 18px
+  line-height: 28px
+  padding: 30px 0 30px 30px
 
-.red {
-  background-color: #E4003A;
-  color: #FFFFFF;
-}
+.red
+  background-color: #E4003A
+  color: #FFFFFF
 
-.white {
-  transform: translateY(-50px);
-  background-color: #FFFF;
-}
+.white
+  transform: translateY(-50px)
+  background-color: #FFFF
 
-h4.section-title {
-  font-size: 35px;
-  color: #1F2951;
-}
+h4.section-title
+  font-size: 35px
+  color: #1F2951
 
-p.quote {
-  font-size: 24px;
-  color: #1F2951;
-  line-height: 28px;
-}
+p.quote
+  font-size: 24px
+  color: #1F2951
+  line-height: 28px
 
-.bloc {
-  padding-left: 60px;
-  position: relative;
-}
+.bloc
+  padding-left: 60px
+  position: relative
 
-.association {
-  .white-bloc {
-    padding: 0 70px 27px 0;
-    background: white;
-    position: absolute;
-  }
-}
+.association
+  .white-bloc
+    padding: 0 70px 27px 0
+    background: white
+    position: absolute
 
-.red-block {
-  font-size: 27px;
-  letter-spacing: 0.64px;
-  line-height: 25px;
-  background-color: #E4003A;
-  color: white;
-}
+.red-block
+  font-size: 27px
+  letter-spacing: 0.64px
+  line-height: 25px
+  background-color: #E4003A
+  color: white
 
-.white-block {
-  background: #FFFFFF;
-  font-size: 20px;
-  color: #1F2951;
-  letter-spacing: 1px;
-  line-height: 25px;
-  margin-top: 10px;
-}
+.white-block
+  background: #FFFFFF
+  font-size: 20px
+  color: #1F2951
+  letter-spacing: 1px
+  line-height: 25px
+  margin-top: 10px
 
-.blue-section {
-  background-color: #1F2951;
-  font-size: 18px;
-  color: #FFFFFF;
-  line-height: 28px;
-  padding: 46px;
+.blue-section
+  background-color: #1F2951
+  font-size: 18px
+  color: #FFFFFF
+  line-height: 28px
+  padding: 46px
 
-  p.light {
-    font-size: 13px;
-    color: #FFFFFF;
-    line-height: 23px;
-    margin: 30px 0;
-  }
-}
+  p.light
+    font-size: 13px
+    color: #FFFFFF
+    line-height: 23px
+    margin: 30px 0
 
-.more-info {
-  :before {
-    content: url('/assets/micro-logo.svg');
-    margin-right: 10px;
-  }
+.more-info
+  :before
+    content: url('/assets/micro-logo.svg')
+    margin-right: 10px
 
-  margin-top: 20px;
-  padding-right: 20px;
-  background-color: #E4003A;
-  text-align: right;
-  color: #FFFF;
-  text-transform: uppercase;
-}
+  margin-top: 20px
+  padding-right: 20px
+  background-color: #E4003A
+  text-align: right
+  color: #FFFF
+  text-transform: uppercase
 
-#sw {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+#sw
+  display: flex
+  justify-content: space-between
+  flex-direction: column
 
-  @media screen and (min-width: 769px) {
-    flex-direction: row;
-  }
-}
+  @media screen and (min-width: 769px)
+    flex-direction: row
 
-.blue-text {
-  width: 50%;
+.blue-text
+  width: 50%
   // width: 40%;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 
-  h4 {
-    font-size: 27px;
-    color: #FFFFFF;
-    letter-spacing: 0.64px;
-    line-height: 25px;
-    background-color: #1F2951;
-    margin-bottom: 15px;
-  }
+  h4
+    font-size: 27px
+    color: #FFFFFF
+    letter-spacing: 0.64px
+    line-height: 25px
+    background-color: #1F2951
+    margin-bottom: 15px
 
-  p {
-    text-align: justify;
-    font-size: 13px;
-    color: #000000;
-    line-height: 20px;
-  }
-}
+  p
+    text-align: justify
+    font-size: 13px
+    color: #000000
+    line-height: 20px
 
-.sponsors {
-  margin-top: 50px;
-}
+.sponsors
+  margin-top: 50px
 
-#footer {
-  margin-top: 80px;
+#footer
+  margin-top: 80px
 
-  .footer-text {
-    align-items: flex-end;
-    display: flex;
-  }
+  .footer-text
+    align-items: flex-end
+    display: flex
 
-  .footer-right {
-    justify-content: flex-end;
+  .footer-right
+    justify-content: flex-end
 
-    a {
-      color: white;
-      font-size: 2em;
-      text-decoration: none;
+    a
+      color: white
+      font-size: 2em
+      text-decoration: none
 
-      :hover {
-        opacity: 0.7;
-      }
-    }
-  }
-}
+      :hover
+        opacity: 0.7
 </style>
 

@@ -1,34 +1,32 @@
+
 <template lang="pug">
     .event-card
       .event-img
-        img(:src="imgUrl")
+        img(:src="dataEvent.imgUrl")
       .event-content
-        .event-city {{city}}
+        .event-city {{dataEvent.city}}
         .event-address
-            h3 {{place}} 
-            | {{address}}
+            h3 {{dataEvent.place}} 
+            | {{dataEvent.address}}
         .event-text
-            | {{text}}
+            | {{dataEvent.text}}
         .event-date
           .day
-            h3 {{date}}
+            h3 {{dataEvent.date}}
           .month 
-            h3 {{month}}
-      a(:href="linkUrl" target="_blank").more-infos plus d'infos
+            h3 {{dataEvent.month}}
+      a(:href="dataEvent.linkUrl" target="_blank").more-infos plus d'infos
   </template>
+
 
 
 <script>
 export default {
   props: {
-    imgUrl: "",
-    linkUrl: "",
-    city: "",
-    place: "",
-    address: "",
-    text: "",
-    date: "",
-    month: ""
+    dataEvent: {
+      type: Object,
+      require: true
+    }
   },
   data() {
     return {};
