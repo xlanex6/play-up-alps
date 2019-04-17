@@ -3,13 +3,13 @@
     section.header
       .container
         .columns
-          .column
+          .culumn
             img(src="~assets/bigevent/logoBE.png") 
           .column.is-two-fifths
             p “Après les Startup Weekend d’Annecy, Grenoble et Chambéry,le collectif Play Up Alps rassemble l'ensemblede sa communauté à Chambéry, 
               br
               | <span class="yellow">le 23 Mai 2019, à partir de 18h</span>pour une soirée placée sous le signe de l’inspiration, de l’entreprenariat, de la réussite, et du partage.
-          .column
+          .culumn
         .columns
           .column
           .column.is-three-fifths
@@ -31,17 +31,20 @@
       .container 
         .columns
           .column.speaker-title.has-text-centered
-            // img(src="~assets/bigevent/gregoire.jpg")
+            img(src="~assets/bigevent/gregoire.png")
+            br
             span.yellow Grégoire Gambetto
             br
             | Co-fondateurde Germinal
           .column.speaker-title.has-text-centered
-            // img(src="~assets/bigevent/gregoire.jpg")
+            img(src="~assets/bigevent/jennifer.png")
+            br
             span.yellow Jennifer Cataldo
             br
             | CEOde Vinatis
           .column.speaker-title.has-text-centered
-            // img(src="~assets/bigevent/gregoire.jpg")
+            img(src="~assets/bigevent/alix.png")
+            br
             span.yellow Alix Gauthier
             br
             | Co-fondateur deCopines de Voyages
@@ -83,7 +86,8 @@ export default {
   background-image: linear-gradient(to right, #252c50 3%, #415b8a)
 
 .v-star 
-  position: fixed
+  position: absolute
+  transform: translateY(-60px)
   top: 0
   right: 0
 
@@ -91,6 +95,7 @@ export default {
   color: #efd938
   font-weight: bolder
 .header 
+  position: relative
   height: 100%
   p 
     // width: 588px;
