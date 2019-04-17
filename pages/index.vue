@@ -152,13 +152,13 @@ export default {
       },
       bigevent: {
         imgUrl:
-          "https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_150/v1538993455/PlayUpApls/ca.png",
+          "https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_200/v1555486065/PlayUpApls/logoBE.png",
         city: "Chambéry",
         place: "Place INEDIT",
         address: "Secret",
         text: "à partir de 18h",
         date: "23",
-        month: "février",
+        month: "Mai",
         linkurl: "https://www.startupweekendchambery.com/"
       }
     };
