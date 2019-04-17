@@ -30,10 +30,32 @@
     section 
       .container 
         .columns
-          .column
-
-          .column
-          .column
+          .column.speaker-title.has-text-centered
+            // img(src="~assets/bigevent/gregoire.jpg")
+            span.yellow Grégoire Gambetto
+            br
+            | Co-fondateurde Germinal
+          .column.speaker-title.has-text-centered
+            // img(src="~assets/bigevent/gregoire.jpg")
+            span.yellow Jennifer Cataldo
+            br
+            | CEOde Vinatis
+          .column.speaker-title.has-text-centered
+            // img(src="~assets/bigevent/gregoire.jpg")
+            span.yellow Alix Gauthier
+            br
+            | Co-fondateur deCopines de Voyages
+        .columns
+          .column.is-three-fifths.is-offset-one-fifth.speaker-title
+            span.larger et bien d’autres... 
+            br
+            |viendront partager leurs expériences entrepreneurialesautour d’une table ronde et de conférences. 
+            br
+            br
+            | Et parce qu’on ne change pas les bonnes habitudes… Un repas convivial autour de belles tablées vous attendpour compléter cette soirée exceptionnelle ! 
+        .columns
+          .column.is-three-fifths.is-offset-one-fifth.speaker-title
+            .cta Plus d’infos sur le programme de la soirée
 
 </template>
 
@@ -97,5 +119,31 @@ export default {
     letter-spacing: -0.8px;
     text-align: center;
     color: #f4e33f;
+    margin-bottom: 40px
 
+.speaker-title
+  //   width: 238px;
+  // height: 75px;
+  // font-family: Rubik;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.08;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
+  .larger
+    font-size: 37px;
+    letter-spacing: -0.7px;
+
+.cta
+  font-size: 33px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 23px
+  color: #252d52;
+  background-image: linear-gradient(to right, #faef65, #e6c72e);
+  margin-bottom: 2em
 </style>
