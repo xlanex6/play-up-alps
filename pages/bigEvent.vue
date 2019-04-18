@@ -59,6 +59,8 @@
         .columns
           .column.is-three-fifths.is-offset-one-fifth.speaker-title
             .cta Plus d’infos sur le programme de la soirée
+    section.insolite
+      // .blue-layer
 
 </template>
 
@@ -151,4 +153,23 @@ export default {
   color: #252d52;
   background-image: linear-gradient(to right, #faef65, #e6c72e);
   margin-bottom: 2em
+
+.insolite
+  height: 500px
+  background-image: url('~assets/bigevent/insoliteBGoverlay.jpg')
+  background-cover: cover
+  background-position: center
+  z-index: 0
+  position: relative
+
+.blue-layer
+  height: 100%
+  width: 100%
+  background-image: linear-gradient(to right, #5980b1 3%, #aad1f0)
+  position: absolute
+  top: 0
+  left: 0 
+  opacity: 0.8
+  z-index: 1
+
 </style>
