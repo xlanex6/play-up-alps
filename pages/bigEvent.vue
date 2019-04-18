@@ -64,7 +64,9 @@
           .blue-square
             .text-insolite
               h3 Play Up Alps
-              h4 vous propose un événement dans un lieu inédità Chambéry pour une soirée exceptionnel!
+              h4 vous propose un événement dans un lieu inédit
+                br 
+                | à Chambéry pour une soirée exceptionnel!
               h5 Et pour faire  durer un peu le suspens, ce lieu insolite ne sera
                 br 
                 | dévoilé aux participants que quelques jours
