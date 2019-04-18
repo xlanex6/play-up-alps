@@ -60,8 +60,23 @@
           .column.is-three-fifths.is-offset-one-fifth.speaker-title
             .cta Plus d’infos sur le programme de la soirée
     section.insolite
-      // .blue-layer
-
+          img(src="~assets/bigevent/un-lieu-insolite.png" class="title-insolite") 
+          .blue-square
+            .text-insolite
+              h3 Play Up Alps
+              h4 vous propose un événement dans un lieu inédità Chambéry pour une soirée exceptionnel!
+              h5 Et pour faire  durer un peu le suspens, ce lieu insolite ne sera
+                br 
+                | dévoilé aux participants que quelques jours
+                br
+                | avant l’événement !
+          .cta-insolite JE PARTICIPE
+    section
+      .columns
+        .column
+        .column text de merde
+        .column
+      
 </template>
 
 <script>
@@ -155,21 +170,54 @@ export default {
   margin-bottom: 2em
 
 .insolite
-  height: 500px
+  height: 550px
   background-image: url('~assets/bigevent/insoliteBGoverlay.jpg')
-  background-cover: cover
+  background-size: cover
   background-position: center
-  z-index: 0
-  position: relative
+  padding-top: 50px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
 
-.blue-layer
-  height: 100%
-  width: 100%
-  background-image: linear-gradient(to right, #5980b1 3%, #aad1f0)
-  position: absolute
-  top: 0
-  left: 0 
-  opacity: 0.8
+.blue-square
+  height: 270px
+  position relative
+  width: 60%
+  box-shadow: -2.1px -2.1px 0 0 #ffffff;
+  background-image: linear-gradient(to right, #5980b1 1%, #aed5f3)
+  transform: translateY(-52px) rotate(-8.5deg)
+  z-index: 0
+  text-align: center;
+  color: #ffffff;
+  .text-insolite
+    margin-top: 30px
+    transform: rotate(8.5deg)
+    h3 
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 0.97;
+      letter-spacing: -0.6px;
+    h4 
+      font-size: 30px;
+      line-height: 1.03;
+      letter-spacing: -1.2px;
+      margin-bottom: 20px
+    h5 
+      font-size: 24px;
+      line-height: 1.1;
+      letter-spacing: -0.6px;
+
+.title-insolite
   z-index: 1
+.cta-insolite
+  font-size: 33px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 9px 19px
+  color: #252d52;
+  background-image: linear-gradient(to right, #faef65, #e6c72e);
+  transform: translateY(-70px)
 
 </style>
