@@ -73,11 +73,38 @@
                 br
                 | avant l’événement !
           .cta-insolite JE PARTICIPE
-    section
-      .columns
-        .column
-        .column text de merde
-        .column
+    section.reasons-section
+      .container
+        .columns
+          .column.reasons.is-6.is-offset-3
+            .yellow.big 3
+            h3 bonnes raisons
+              br
+              | de participer
+              br
+              | à l’événement
+        .columns
+          .column.is-6.is-offset-3
+            .reasons-list
+              ul 
+                li S'inspirer de belles 
+                  br 
+                  |réussites pour préparer la vôtre
+                  
+                li Vivre une expérience différente
+                  br 
+                  |et conviviale dans un lieu inédit !
+                  
+                li Rencontrer et échanger
+                  br 
+                  |avec d'autres entrepreneurs  du territoire alpin
+              .cta-reason JE PARTICIPE
+      img(src="~/assets/bigevent/etoileHorizontal.png" class="reason-star is-hidden-touch")
+      img(src="~/assets/bigevent/logoBE.png" class="reason-logo is-hidden-touch")
+      img(src="~/assets/bigevent/logo-play-upBE.png" class="reason-logoPUA is-hidden-touch")
+                  
+
+        
       
 </template>
 
@@ -130,7 +157,6 @@ export default {
     color: #ffffff;
 
 // ----------------------------
-
 .speaker
   padding-top: 2em
   h3 
@@ -221,5 +247,79 @@ export default {
   color: #252d52;
   background-image: linear-gradient(to right, #faef65, #e6c72e);
   transform: translateY(-70px)
+.reasons-section
+  position: relative
+  padding: 50px 0
+.reason-star
+  position: absolute
+  bottom: 0
+.reason-logo
+  position: absolute
+  top: 20px
+  right: 50px
+  height: 200px
+.reason-logoPUA
+  position: absolute
+  bottom: 50px
+  right: 250px
+  height: 100px
+.reasons
+  display: flex
+  justify-content: center
+  .big 
+    width: 95px;
+    height: 111px;
+    font-family: Rubik;
+    font-size: 156.5px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.6;
+    letter-spacing: -3.1px;
+    text-align: center;
+    margin: 12px 20px 0 0
+
+  h3
+    font-family: Rubik;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.88;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: #ffffff;
+.reasons-list
+  padding-left: 250px
+  li
+    font-family: Rubik;
+    font-size: 22.5px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px
+    &:before
+      content: "-"
+      height: 10px
+      padding-right: 5px
+
+.cta-reason 
+  font-size: 33px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 9px 19px
+  color: #252d52;
+  width: 254px;
+  height: 63px;
+  margin-top: 30px
+  background-image: linear-gradient(to right, #faef65, #e6c72e);
+
+
+
 
 </style>
