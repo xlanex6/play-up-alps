@@ -58,7 +58,7 @@
             | Et parce qu’on ne change pas les bonnes habitudes… Un repas convivial autour de belles tablées vous attendpour compléter cette soirée exceptionnelle ! 
         .columns
           .column.is-three-fifths.is-offset-one-fifth.speaker-title
-            .cta Plus d’infos sur le programme de la soirée
+            a(href="https://www.eventbrite.fr/e/billets-the-big-event-1-rendez-vous-avec-linspiration-60123075738" class="cta-insolite") Plus d’infos
     section.insolite
           img(src="~assets/bigevent/un-lieu-insolite.png" class="title-insolite") 
           .blue-square
@@ -72,7 +72,7 @@
                 | dévoilé aux participants que quelques jours
                 br
                 | avant l’événement !
-          .cta-insolite JE PARTICIPE
+          a(href="https://www.eventbrite.fr/e/billets-the-big-event-1-rendez-vous-avec-linspiration-60123075738" class="cta-insolite") JE PARTICIPE
     section.reasons-section
       .container
         .columns
@@ -98,10 +98,24 @@
                 li Rencontrer et échanger
                   br 
                   |avec d'autres entrepreneurs  du territoire alpin
-              .cta-reason JE PARTICIPE
+              a(href="https://www.eventbrite.fr/e/billets-the-big-event-1-rendez-vous-avec-linspiration-60123075738" class="cta-insolite") JE PARTICIPE
       img(src="~/assets/bigevent/etoileHorizontal.png" class="reason-star is-hidden-touch")
       img(src="~/assets/bigevent/logoBE.png" class="reason-logo is-hidden-touch")
       img(src="~/assets/bigevent/logo-play-upBE.png" class="reason-logoPUA is-hidden-touch")
+    //- section
+    //-   .container-fluid
+    //-   .columns.sponsors
+    //-     .column
+    //-     .column.has-text-centered
+    //-       a(href="https://my-mg.com/" target="_blank")
+    //-         img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538908951/PlayUpApls/mg.png")
+    //-     .column.has-text-centered
+    //-       a(href="http://pandorabox-consulting.com/" target="_blank")
+    //-         img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538909245/PlayUpApls/pandorabox.png")
+    //-     .column.has-text-centered
+    //-       a(href="https://levillagebyca.com/fr" target="_blank")
+    //-         img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538909245/PlayUpApls/village-by-ca.png")
+    //-     .column
                   
 
         
@@ -120,7 +134,6 @@ export default {
 .line
   position: relative
   border-bottom: 1px #97bfe3 dashed
-
 .cisor 
   // position: absolue
   margin-left: 70vw
@@ -130,6 +143,7 @@ export default {
   width: 100vw
   height: 100%;
   background-image: linear-gradient(to right, #252c50 3%, #415b8a)
+  font-family: 'Rubik', sans-serif
 
 .v-star 
   position: absolute
