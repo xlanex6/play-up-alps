@@ -137,7 +137,7 @@ export default {
         text: "à partir de 18h",
         date: "Mois de",
         month: "novembre",
-        linkurl: "http://www.swgrenoble.org/"
+        linkUrl: "http://www.swgrenoble.org/"
       },
       chambery: {
         imgUrl:
@@ -148,7 +148,7 @@ export default {
         text: "à partir de 18h",
         date: "1-3",
         month: "février 20",
-        linkurl: "https://www.startupweekendchambery.com/"
+        linkUrl: "https://www.startupweekendchambery.com/"
       },
       bigevent: {
         imgUrl:
@@ -159,7 +159,7 @@ export default {
         text: "à partir de 18h",
         date: "23",
         month: "Mai",
-        linkurl: "https://www.startupweekendchambery.com/"
+        linkUrl: "/bigevent"
       }
     };
   }
@@ -168,7 +168,7 @@ export default {
 
 <style lang="stylus">
 body
-  font-family: 'Montserrat', sans-serif
+  font-family: 'Rubik', sans-serif
 
 .bg-block
   margin-top: 60px
