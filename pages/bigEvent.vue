@@ -22,43 +22,52 @@
           img(src="~assets/bigevent/cisor.png" class="cisor") 
     section.speaker
       .container
-       .is-three-fifths.is-offset-one-fifth
-        h3 L’hypercroissance et l’humain:
-          br 
-          |vedettes de cette première édition !
-      
-    section 
-      .container 
         .columns
-          .column.speaker-title.has-text-centered
-            img(src="~assets/bigevent/gregoire.png")
-            br
-            span.yellow Grégoire Gambetto
-            br
-            | Co-fondateurde Germinal
-          .column.speaker-title.has-text-centered
-            img(src="~assets/bigevent/jennifer.png")
-            br
-            span.yellow Jennifer Cataldo
-            br
-            | CEOde Vinatis
-          .column.speaker-title.has-text-centered
-            img(src="~assets/bigevent/alix.png")
-            br
-            span.yellow Alix Gauthier
-            br
-            | Co-fondateur deCopines de Voyages
-        .columns
-          .column.is-three-fifths.is-offset-one-fifth.speaker-title
-            span.larger et bien d’autres... 
-            br
-            |viendront partager leurs expériences entrepreneurialesautour d’une table ronde et de conférences. 
-            br
-            br
-            | Et parce qu’on ne change pas les bonnes habitudes… Un repas convivial autour de belles tablées vous attendpour compléter cette soirée exceptionnelle ! 
-        .columns
-          .column.is-three-fifths.is-offset-one-fifth.speaker-title
-            a(href="https://www.eventbrite.fr/e/billets-the-big-event-1-rendez-vous-avec-linspiration-60123075738" class="cta-insolite") Plus d’infos
+          .column.is-8.is-offset-2
+            h3 PROGRAMME
+            h4 Gagnants Startup Weekend
+            p Que sont-ils devenus ?
+            h4 Table Ronde 
+              br
+              | " Les étapes de l’hyper-croissance" avec :
+            p Jenifer Cataldo, CEO de Vinatis   
+            p Johnathan Bonzy, fondateur de Une Petite Mousse
+            p Sébastien Moulis, co-fondateur de Skiply
+            h4 Conférences : 
+            p   "Comment passer de 0 à 1 millions en 1 an ?" par Grégoire Gambetto, co-fondateur de Germinal
+            p "Et si l'humain était la clé de la croissance ?" par Stéphane Couleaud et Sophie Panot de Webmecanik
+                //- section 
+                //-   .container 
+                //-     .columns
+                //-       .column.speaker-title.has-text-centered
+                //-         img(src="~assets/bigevent/gregoire.png")
+                //-         br
+                //-         span.yellow Grégoire Gambetto
+                //-         br
+                //-         | Co-fondateurde Germinal
+                //-       .column.speaker-title.has-text-centered
+                //-         img(src="~assets/bigevent/jennifer.png")
+                //-         br
+                //-         span.yellow Jennifer Cataldo
+                //-         br
+                //-         | CEOde Vinatis
+                //-       .column.speaker-title.has-text-centered
+                //-         img(src="~assets/bigevent/alix.png")
+                //-         br
+                //-         span.yellow Alix Gauthier
+                //-         br
+                //-         | Co-fondateur deCopines de Voyages
+                //-     .columns
+                //-       .column.is-three-fifths.is-offset-one-fifth.speaker-title
+                //-         span.larger et bien d’autres... 
+                //-         br
+                //-         |viendront partager leurs expériences entrepreneurialesautour d’une table ronde et de conférences. 
+                //-         br
+                //-         br
+                //-         | Et parce qu’on ne change pas les bonnes habitudes… Un repas convivial autour de belles tablées vous attendpour compléter cette soirée exceptionnelle ! 
+                //-     .columns
+                      .column.is-three-fifths.is-offset-one-fifth.speaker-title
+                        a(href="https://www.eventbrite.fr/e/billets-the-big-event-1-rendez-vous-avec-linspiration-60123075738" class="cta-insolite") Plus d’infos
     section.insolite
           img(src="~assets/bigevent/un-lieu-insolite.png" class="title-insolite") 
           .blue-square
@@ -102,24 +111,7 @@
       img(src="~/assets/bigevent/etoileHorizontal.png" class="reason-star is-hidden-touch")
       img(src="~/assets/bigevent/logoBE.png" class="reason-logo is-hidden-touch")
       img(src="~/assets/bigevent/logo-play-upBE.png" class="reason-logoPUA is-hidden-touch")
-    //- section
-    //-   .container-fluid
-    //-   .columns.sponsors
-    //-     .column
-    //-     .column.has-text-centered
-    //-       a(href="https://my-mg.com/" target="_blank")
-    //-         img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538908951/PlayUpApls/mg.png")
-    //-     .column.has-text-centered
-    //-       a(href="http://pandorabox-consulting.com/" target="_blank")
-    //-         img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538909245/PlayUpApls/pandorabox.png")
-    //-     .column.has-text-centered
-    //-       a(href="https://levillagebyca.com/fr" target="_blank")
-    //-         img(src="https://res.cloudinary.com/dey128wj1/image/upload/c_scale,h_100/v1538909245/PlayUpApls/village-by-ca.png")
-    //-     .column
-                  
 
-        
-      
 </template>
 
 <script>
@@ -173,6 +165,29 @@ export default {
 // ----------------------------
 .speaker
   padding-top: 2em
+  padding-bottom: 4em
+  p 
+    font-family: Rubik;
+    font-size: 23px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-left: 10px
+  h4 
+    font-family: Rubik;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.09;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 10px
+    margin-top: 10px
+    
   h3 
     font-family: Rubik;
     font-size: 37.5px;
