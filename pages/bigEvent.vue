@@ -36,6 +36,9 @@
             h4 Conférences : 
             p   "Comment passer de 0 à 1 millions en 1 an ?" par Grégoire Gambetto, co-fondateur de Germinal
             p "Et si l'humain était la clé de la croissance ?" par Stéphane Couleaud et Sophie Panot de Webmecanik
+        .columns
+          .column.is-8.is-offset-2.has-text-centered
+              a(href="https://www.eventbrite.fr/e/billets-the-big-event-1-rendez-vous-avec-linspiration-60123075738" class="cta-speaker") Plus d’infos
                 //- section 
                 //-   .container 
                 //-     .columns
@@ -65,9 +68,6 @@
                 //-         br
                 //-         br
                 //-         | Et parce qu’on ne change pas les bonnes habitudes… Un repas convivial autour de belles tablées vous attendpour compléter cette soirée exceptionnelle ! 
-                //-     .columns
-                      .column.is-three-fifths.is-offset-one-fifth.speaker-title
-                        a(href="https://www.eventbrite.fr/e/billets-the-big-event-1-rendez-vous-avec-linspiration-60123075738" class="cta-insolite") Plus d’infos
     section.insolite
           img(src="~assets/bigevent/un-lieu-insolite.png" class="title-insolite") 
           .blue-square
@@ -199,6 +199,14 @@ export default {
     text-align: center;
     color: #f4e33f;
     margin-bottom: 40px
+  .cta-speaker 
+    font-size: 33px;
+    letter-spacing: -0.7px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 9px 19px;
+    color: #252d52;
+    background-image: linear-gradient(to right, #faef65, #e6c72e);
 
 .speaker-title
   //   width: 238px;
