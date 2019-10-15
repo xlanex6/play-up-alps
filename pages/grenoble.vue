@@ -35,6 +35,16 @@ div
     });
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: "Startup Weekend Grenoble #9 · Play Up Alps"
+    }
+  }
+}
+</script>
+
 <style lang="stylus">
 body
   font-family: 'Rubik', sans-serif
