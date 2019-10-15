@@ -15,7 +15,7 @@
             h3 {{dataEvent.date}}
           .month 
             h3 {{dataEvent.month}}
-      a(:href="dataEvent.linkUrl" target="_blank").more-infos plus d'infos
+      a(:href="dataEvent.linkUrl").more-infos plus d'infos
   </template>
 
 

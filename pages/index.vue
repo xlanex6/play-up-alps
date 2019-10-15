@@ -135,9 +135,9 @@ export default {
         place: null,
         address: null,
         text: "à partir de 18h",
-        date: "Mois de",
-        month: "novembre",
-        linkUrl: "http://www.swgrenoble.org/"
+        date: "29/11",
+        month: "01/12",
+        linkUrl: "/grenoble"
       },
       chambery: {
         imgUrl:
