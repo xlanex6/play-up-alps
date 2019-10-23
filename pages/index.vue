@@ -67,10 +67,10 @@ div
       .container
         .columns
           .column.is-8.is-offset-2
-            eventCard( :data-event="bigevent" )
-            eventCard( :data-event="annecy" )
             eventCard(:data-event="grenoble")
-            // eventCard( :data-event="chambery")
+            eventCard( :data-event="chambery")
+            //eventCard( :data-event="bigevent" )
+            eventCard( :data-event="annecy" )
   section
     .container
       h3.number-tag #4
@@ -146,8 +146,8 @@ export default {
         place: "Le Manége",
         address: "331 Rue de la République",
         text: "à partir de 18h",
-        date: "1-3",
-        month: "février 20",
+        date: "31/01",
+        month: "02/02",
         linkUrl: "https://www.startupweekendchambery.com/"
       },
       bigevent: {
