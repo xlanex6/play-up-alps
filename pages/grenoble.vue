@@ -47,7 +47,7 @@ div
           p.quote Le dimanche
           p A la fin du weekend, chaque équipe à 5 minutes pour présenter son projet devant un jury d’experts, suivi de 5 minutes de questions / réponses. Les projets les plus prometteurs sont récompensés sur la base de 3 critères : validation client, modèle économique, cohésion d’équipe et l’exécution.
           br
-  section#who
+  section#section-who
       .container
         h3.number-tag # C'est pour qui ?
         p Événement ouvert à tous, le Startup Weekend Grenoble a pour leitmotiv la conviction que tout le monde peut créer sa startup et que l’esprit d’équipe est la clef de voûte de tous les projets.
