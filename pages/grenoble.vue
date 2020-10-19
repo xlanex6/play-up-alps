@@ -8,12 +8,9 @@ div
             img.logo(src="~assets/logo.png")
         .pua-header
           .blue-block 
-            .event-title Startup Weekend Grenoble #9
-          .dates 29/11 - 01/12 2019 
-          .location Grenoble École de Management
-          .more-info.big
-            a(href="https://www.eventbrite.com/e/startup-weekend-grenoble-9-tickets-76968598149")
-              |Je participe
+            .event-title Startup Weekend Grenoble 2020
+          .dates ANNULÉ
+          .location En raison des mesures sanitaires
           #eventbrite-widget-container-76968598149.eventbrite
     .columns
       .column 
